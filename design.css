@@ -1,0 +1,205 @@
+
+
+/* Main styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/*Place a header background as an image*/
+
+/* Header with Background Image */
+header {
+    background: url('images/bg-coffee-shop.jpg') no-repeat center center;
+    background-size: cover; /* Cover ensures the image covers the entire header */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    position: relative; /* For positioning the download button if needed */
+}
+
+/* Ensure text and other elements are visible over the background image */
+header h1,
+header nav ul li a {
+    z-index: 2;
+    position: relative;
+}
+
+/* If you have a download button or other elements, you may need to adjust their styles as well */
+.resume-download {
+}
+
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+    padding: 3px 6px; /* Add padding to make the clickable area larger */
+    margin: 0 1px; /* Optional: Add some space between the buttons */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly less transparent on hover */
+}
+
+
+/* Main content */
+main {
+    padding: 15px;
+    background: #fff;
+}
+
+main h2, main h3 {
+    color: #333;
+}
+
+
+/* Blog Post Blocks */
+#blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-block {
+    width: calc(33.333% - 20px); /* Three items per row with some space between them */
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-block img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-block h3 {
+    margin-top: 10px;
+}
+
+.post-block h3 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-block h3 a:hover {
+    color: #e8491d;
+}
+
+@media (max-width: 768px) {
+    .post-block {
+        width: calc(50% - 20px); /* Two items per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .post-block {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+
+/* Resume Download Button */
+.resume-download {
+    position: fixed;
+    top: 1px; /* Adjust as needed to stick to the top-right corner */
+    right: 1px; /* Adjust as needed to stick to the top-right corner */
+    display: inline-block;
+    padding: 2px 5px; /* Smaller padding to reduce button size */
+    background-color: #4CAF50; /* Gentle green color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em; /* Smaller font size */
+    border-radius: 2px; /* Adjusted for smaller button size */
+    transition: background-color 0.3s ease;
+    z-index: 5; /* Ensure it's above other elements */
+}
+
+.resume-download:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+
+
+/* Adjust header container to relative to position the button */
+header .container {
+    position: relative;
+    padding-right: 40px; /* Ensure content inside header does not overlap the button */
+}
+
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+}
+
+.back-to-top {
+    margin-top: 20px;
+    display: none;
+    font-size: 14px;
+    color: #333;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background: #333;
+    color: #fff;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am-developer2021 Blog</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>I am-developer started 2021</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Resume Download Button -->
+            <a href="Administratör - Hossein Alghalibi CV.pdf" class="resume-download" download>Download My Resume</a>
+        </div>
+    </header>
+    
+
+<!-- Main content -->
+<main>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to I am-developer2021</h2>
+            <p>This is the home section where you can introduce visitors to the website and highlight the purpose of the blog.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Here you can write about your journey as a developer, your skills, and your experiences.</p>
+            <!-- You can add more content here like images, a brief bio, etc. -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog Posts</h2>
+            <div id="blog-posts">
+                <!-- Blog posts will be inserted here -->
+                <article>
+                    <h3>Blog Post Title</h3>
+                    <p>Summary of the blog post...</p>
+                    <a href="#">Read More</a>
+                </article>
+                <!-- Repeat for each blog post -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+<section id="blog">
+    <div class="container">
+        <h2>Blog Posts</h2>
+        <div id="blog-posts">
+            <!-- Blog post block -->
+            <div class="post-block">
+                <img src="path-to-your-image.jpg" alt="Blog Post Title">
+                <h3><a href="path-to-your-blog-post.html">Blog Post Title</a></h3>
+            </div>
+            <!-- Repeat this block for each blog post, with appropriate image and link -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+    <!-- Footer will go here -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Iam-developer2021. All rights reserved.</p>
+        <div class="social-links">
+            <!-- Replace # with your social media links -->
+            <a href="#" title="Follow on Twitter"><img src="images/icon-logo-twitter.png" alt="Twitter"></a>
+            
+            <a href="https://www.linkedin.com/in/hossein-alghalibi/" title="Connect on LinkedIn"><img src="images/icon-logo-linkedin.png" alt="LinkedIn"></a>
+
+            <a href="#" title="Like on Facebook"><img src="images/icon-logo-facebook.png" alt="Facebook"></a>
+
+            <a href="#" title="Follow on GitHub"><img src="images/icon-logo-youtube.png" alt="GitHub"></a>
+            <!-- Add other social media links as needed -->
+        </div>
+        <a href="#home" class="back-to-top">Back to Top</a>
+    </div>
+</footer>
+
+<!-- Additional Scripts if needed -->
+<!-- Example: Script for a Back-to-Top Button -->
+<script>
+    // Get the button
+    let backToTopButton = document.querySelector(".back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    backToTopButton.onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
+</script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
