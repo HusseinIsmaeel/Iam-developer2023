@@ -15,6 +15,8 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    /* background-color: antiquewhite; */
+    /* padding: 20px; */
     
 }
 
@@ -25,6 +27,7 @@ header {
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
+    position: center ;
 }
 
 header a {
@@ -38,7 +41,7 @@ header a {
 
 /* Header with Background Image */
 header {
-    background: url('images/bg-coffee-shop.jpg') no-repeat center center;
+    background: url('images/Header\ background\ Photo\ of\ a\ wide\ abstract.png') no-repeat center center;
     background-size: cover; /* Cover ensures the image covers the entire header */
     color: #fff;
     padding-top: 30px;
@@ -82,11 +85,29 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.7); /* Slightly less transparent on hover */
 }
 
+.search-section {
+    margin: 10px 10px;
+}
+
+#searchBox {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: auto
+    ;
+}
+
+
 
 /* Main content */
 main {
     padding: 15px;
-    background: #fff;
+    background: url('images/bg-gradient.jpg') no-repeat center center;
+    background-size: cover;
+    
 }
 
 main h2, main h3 {
@@ -99,6 +120,7 @@ main h2, main h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .post-block {
@@ -171,6 +193,88 @@ header .container {
     position: relative;
     padding-right: 40px; /* Ensure content inside header does not overlap the button */
 }
+
+
+/*add comments, like and share buttons*/
+
+.blog-post-actions button {
+    
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #eee;
+    background-color: #4CAF50; /* Green background */
+
+}
+
+.comments-section {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    
+}
+
+.comment-form input {
+    width: calc(100% - 110px);
+    padding: 5px;
+    border-radius: 5px;
+
+    
+}
+
+.comment-form button {
+    width: 100px;
+    padding: 5px;
+    margin-left: 5px;
+    color: #000000;
+    background-color: bisque;
+    border-radius: 5px;
+
+}
+
+
+/* Like and Share Button Styles */
+.like-button,
+.share-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.like-button:hover,
+.share-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Like Count Styles */
+.like-count {
+    margin-right: 10px;
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #555; /* Dark grey color */
+}
+
+/* Comments List Styles */
+.comments-list {
+    margin-top: 10px;
+    border-top: 1px solid #ddd; /* Light grey top border */
+    padding-top: 10px;
+}
+
+.comments-list div {
+    padding: 5px 0; /* Padding for each comment */
+    border-bottom: 1px solid #eee; /* Light grey bottom border for each comment */
+}
+
+/* Last comment should not have a bottom border */
+.comments-list div:last-child {
+    border-bottom: none;
+}
+
+
 
 
 

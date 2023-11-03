@@ -23,3 +23,61 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching posts:', error));
 });
+
+
+/* the search bar of the webpage*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Like button functionality
+    document.querySelectorAll('.like-button').forEach(button => {
+        button.addEventListener('click', function() {
+            let likeCount = this.nextElementSibling;
+            let likes = parseInt(likeCount.textContent) || 0;
+            likes++;
+            likeCount.textContent = `${likes} Likes`;
+        });
+    });
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBox = document.getElementById('searchBox');
+    const blogPosts = document.querySelectorAll('.blog-post');
+
+    searchBox.addEventListener('keyup', function(e) {
+        const searchQuery = e.target.value.toLowerCase();
+
+        blogPosts.forEach(post => {
+            const title = post.querySelector('h3').textContent.toLowerCase();
+            const isVisible = title.includes(searchQuery);
+            post.style.display = isVisible ? 'block' : 'none';
+        });
+    });
+});
+</script>
+
+
+    // Comment form functionality
+    document.querySelectorAll('.comment-form').forEach(form => {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            let commentInput = this.querySelector('input[type="text"]');
+            let comment = commentInput.value.trim();
+            if (comment) {
+                let commentsList = this.nextElementSibling;
+                let newComment = document.createElement('div');
+                newComment.textContent = comment;
+                commentsList.appendChild(newComment);
+                commentInput.value = ''; // Clear input field
+            }
+        });
+    });
+
+    // Share button functionality
+    document.querySelectorAll('.share-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // This is a placeholder for share functionality
+            alert('Share functionality to be implemented.');
+        });
+    });
+});
+
