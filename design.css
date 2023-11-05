@@ -105,7 +105,9 @@ nav ul li a:hover {
 /* Main content */
 main {
     padding: 15px;
-    background: url('images/bg-gradient.jpg') no-repeat center center;
+    background: url('images/bg-home-office-studio.jpg') no-repeat center center;
+    background-size: 100%;
+    width: 100%;
     background-size: cover;
     
 }
